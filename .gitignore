@@ -145,3 +145,4 @@ examples/**/*.jpg
 examples/**/*.png
 examples/*.jpg
 examples/*.png
+problems/*.csv
