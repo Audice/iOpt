@@ -75,8 +75,8 @@ class HookeJeevesOptimizer:
         self.f = func
         self.start_point = start_point
         self.max_iter = max_iter
-        self.eps = min(eps, 0.0001)
-        self.step = self.eps * 2
+        self.eps = min(eps, 0.001)
+        self.step = self.eps * 50
         self.step_mult = step_mult
 
     def minimize(self) -> List[float]:

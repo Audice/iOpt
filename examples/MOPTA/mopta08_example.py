@@ -19,7 +19,7 @@ if __name__ == "__main__":
         delimiter=';', dtype=np.float64)
 
     # Формируем параметры решателя
-    params = SolverParameters(r=3, eps=0.001, refine_solution=True, proportion_of_global_iterations=0.01, iters_limit=3000,  start_point=Point(x0))
+    params = SolverParameters(r=3, eps=0.1, refine_solution=True, proportion_of_global_iterations=0.001, iters_limit=5000,  start_point=Point(x0))
 
     # Создаем решатель
     solver = Solver(problem=problem, parameters=params)
